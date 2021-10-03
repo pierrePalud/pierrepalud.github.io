@@ -15,15 +15,15 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "default", "d
 
 # Site Settings
 locale: "en-US"
-title: "Site Title"
+title: "Pierre Palud"
 title_separator: "-"
-subtitle: "subtitle" # site tagline that appears below site title in masthead
-name: "FirstName LastName"
-description: "Description"
+subtitle: "" # site tagline that appears below site title in masthead
+name: "Pierre Palud"
+description: "2nd year PhD student in signal processing and astrophysics"
 github: [metadata]
-url: "https://cristal-sigma.github.io"
+url: "https://pierrepalud.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "CRIStAL-Sigma/cristal-sigma.github.io"
+repository: "pierrePalud/pierrepalud.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -97,13 +97,15 @@ analytics:
 # _includes/author-profile.html
 # _includes/author-profile-custom-links.html
 author:
-  name: "FirstName LastName"
+  name: "Pierre Palud"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "My short bio<br>Second line<br>"
+  bio: "2nd year PhD student in<br>signal processing<br>and astrophysics<br>"
   location: "Lille, France"
-  email: "my.name@email.com"
-  github: "CRIStAL-Sigma"
-  webpage: "https://cristal-sigma.github.io"
+  # email: "pierrepalud@centralelille.fr"
+  github: "pierrePalud"
+  gitlab: "pierrePalud"
+  linkedin: "pierre-palud"
+  webpage: "https://pierrepalud.github.io"
   # Academic profiles
   # To make logo+link appear in author_profile on the left side of the page
   # - fill the corresponding field
@@ -115,7 +117,7 @@ author:
     acmdl:
     ads:
     africarxiv:
-    arxiv: "https://arxiv.org/a/<orcid-id | arxiv-id>"
+    arxiv:
     biorxiv:
     ceur:
     ciencia-vitae:
@@ -132,7 +134,7 @@ author:
     dryad:
     elsevier:
     figshare:
-    google-scholar: "https://scholar.google.com/citations?user=<user-id>=en"
+    google-scholar:
     hal:
     hypothesis:
     ideas-repec:
@@ -153,7 +155,7 @@ author:
     open-materials:
     obp:
     openedition:
-    orcid: "https://orcid.org/<orcid-id>"
+    orcid: "https://orcid.org/0000-0002-5850-6325"
     osf:
     overleaf:
     philpapers:
@@ -193,7 +195,11 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/CRIStAL-Sigma"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url: "https://github.com/pierrePalud"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -203,24 +209,15 @@ author:
 # - add custom links in _includes/footer/custom.html
 footer:
   links: # uncomment url to make link appear
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/pierre-palud"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/CRIStAL-Sigma"
+      url: "https://github.com/pierrePalud"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://gitlab.com/pierrePalud"
 
 # Reading Files
 include:
@@ -309,7 +306,7 @@ scholar:
     reversed: "reversed"
 
   source: _bibliography # where .bib files are saved
-  bibliography: example.bib # .bib file
+  bibliography: biblio.bib # .bib file
   # Custom bibliography display in _layouts/bibliography.html
   bibliography_template: bibliography
 
