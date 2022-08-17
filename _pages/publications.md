@@ -1,7 +1,7 @@
 ---
 permalink: "/publications/"
-layout: home
-classes: wide
+layout: single
+# classes: wide
 author_profile: true
 title: "Publications"
 toc: true
@@ -9,7 +9,6 @@ toc_label: "Publications"
 toc_sticky: true
 ---
 
-<!-- Go to _config.yml file and fill the corresponding fields author.academic_profiles.xxxx-->
 {% if site.author.academic_profiles.google-scholar %}
   <a href="{{ site.author.academic_profiles.google-scholar }}">
     <i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar
@@ -31,10 +30,72 @@ toc_sticky: true
   </a>
 {% endif %}
 
-## Conference papers
+<!-- See also https://github.com/inukshuk/jekyll-scholar to customize your references -->
 
-We have now two submitted conference papers, stay tuned!
+<!-- Preprints -->
+## Preprints
 
-## Poster
+{% capture counter_preprints %}{% bibliography_count --query @unpublished %}{% endcapture %}
+{% if counter_preprints != "0" %}
+  <!-- <h2>Preprints</h2> -->
+  {% bibliography --query @unpublished %}
+{% endif %}
 
-For the [IRAM Multi-line Diagnostics of the Interstellar Medium](<https://iram2022nice.sciencesconf.org/>), I presented the following [poster](/assets/pdfs/poster_IRAM.pdf).
+<!-- Book -->
+<!-- {% capture counter_book %}{% bibliography_count --query @book %}{% endcapture %} -->
+<!-- {% if counter_book != "0" %}
+  <h2>Books</h2>
+  {% bibliography --query @book %}
+{% endif %} -->
+
+<!-- Journal articles-->
+## Journal articles
+
+{% capture counter_article %}{% bibliography_count --query @article %}{% endcapture %}
+{% if counter_article != "0" %}
+  <!-- <h2>Journal articles</h2> -->
+  {% bibliography --query @article %}
+{% endif %}
+
+<!-- Conference papers -->
+## International conferences
+
+{% capture counter_conference %}{% bibliography_count --query @conference[keywords=international] %}{% endcapture %}
+{% if counter_conference != "0" %}
+  <!-- <h2>Conference papers</h2> -->
+  {% bibliography --query @conference[keywords=international] %}
+{% endif %}
+
+<!-- Conference abstracts -->
+## Workshop and conference abstracts
+
+{% capture counter_abstract %}{% bibliography_count --query @conference[keywords=abstract] %}{% endcapture %}
+{% if counter_abstract != "0" %}
+  <!-- <h2>Conference abstracts</h2> @misc-->
+  {% bibliography --query @conference[keywords=abstract] %}
+{% endif %}
+
+<!-- Conference papers -->
+## National conferences
+
+{% capture counter_conference %}{% bibliography_count --query @conference[keywords=national] %}{% endcapture %}
+{% if counter_conference != "0" %}
+  <!-- <h2>Conference papers</h2> -->
+  {% bibliography --query @conference[keywords=national] %}
+{% endif %}
+
+<!-- Thesis -->
+## Thesis
+
+{% capture counter_thesis %}{% bibliography_count --query @thesis %}{% endcapture %}
+{% if counter_thesis != "0" %}
+  <!-- <h2>Thesis</h2> -->
+  {% bibliography --query @thesis %}
+{% endif %}
+
+<!-- Popularization -->
+{% capture counter_popularization %}{% bibliography_count --query @misc[keywords=popularization] %}{% endcapture %}
+{% if counter_popularization != "0" %}
+  <h2>Popularization</h2>
+  {% bibliography --query @misc[keywords=popularization] %}
+{% endif %}
