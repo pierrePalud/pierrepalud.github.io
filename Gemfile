@@ -13,6 +13,7 @@ source "https://rubygems.org"
 
 gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
+# gem "webrick"
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -25,3 +26,5 @@ gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
     gem "jekyll-scholar"
 end
+
+gem "webrick", "~> 1.8"
