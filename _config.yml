@@ -19,7 +19,7 @@ title: "Pierre Palud"
 title_separator: "-"
 subtitle: "" # site tagline that appears below site title in masthead
 name: "Pierre Palud"
-description: "2nd year PhD student in signal processing and astrophysics"
+description: "3rd year PhD student in signal processing and astrophysics"
 github: [metadata]
 url: "https://pierrepalud.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
@@ -99,7 +99,7 @@ analytics:
 author:
   name: "Pierre Palud"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "2nd year PhD student in<br>signal processing<br>and astrophysics<br>"
+  bio: "3rd year PhD student in<br>signal processing<br>and astrophysics<br>"
   location: "Lille, France"
   # email: "pierrepalud@centralelille.fr"
   github: "pierrePalud"
@@ -117,7 +117,7 @@ author:
     acmdl:
     ads:
     africarxiv:
-    arxiv:
+    arxiv: "http://arxiv.org/a/palud_p_1"
     biorxiv:
     ceur:
     ciencia-vitae:
@@ -312,7 +312,7 @@ scholar:
     reversed: "reversed"
 
   source: _bibliography # where .bib files are saved
-  bibliography: '*' # example.bib # .bib file
+  bibliography: '*' # .bib file
   # Custom bibliography display in _layouts/bibliography.html
   bibliography_template: bibliography
 

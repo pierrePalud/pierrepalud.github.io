@@ -48,14 +48,15 @@ toc_sticky: true
   {% bibliography --query @book %}
 {% endif %} -->
 
-<!-- Journal articles-->
-## Journal articles
+<!-- Journal articles
+  ## Journal articles
 
-{% capture counter_article %}{% bibliography_count --query @article %}{% endcapture %}
-{% if counter_article != "0" %}
-  <!-- <h2>Journal articles</h2> -->
-  {% bibliography --query @article %}
-{% endif %}
+  {% capture counter_article %}{% bibliography_count --query @article %}{% endcapture %}
+  {% if counter_article != "0" %}
+    <!-- <h2>Journal articles</h2> -->
+    {% bibliography --query @article %}
+  {% endif %}
+-->
 
 <!-- Conference papers -->
 ## International conferences
@@ -84,14 +85,15 @@ toc_sticky: true
   {% bibliography --query @conference[keywords=national] %}
 {% endif %}
 
-<!-- Thesis -->
-## Thesis
+<!-- Thesis (commented out)
+  ## Thesis
 
-{% capture counter_thesis %}{% bibliography_count --query @thesis %}{% endcapture %}
-{% if counter_thesis != "0" %}
-  <!-- <h2>Thesis</h2> -->
-  {% bibliography --query @thesis %}
-{% endif %}
+  {% capture counter_thesis %}{% bibliography_count --query @thesis %}{% endcapture %}
+  {% if counter_thesis != "0" %}
+    <!-- <h2>Thesis</h2> -->
+    {% bibliography --query @thesis %}
+  {% endif %}
+-->
 
 <!-- Popularization -->
 {% capture counter_popularization %}{% bibliography_count --query @misc[keywords=popularization] %}{% endcapture %}

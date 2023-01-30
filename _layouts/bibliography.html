@@ -12,6 +12,15 @@
     {% endif %}
 {% endfor %}
 
+{% assign paper_exists = false %}
+{% capture path_to_paper %}/assets/pdfs/{{ entry.key }}.pdf{% endcapture %}
+{% for static_file in site.static_files %}
+    {% if static_file.path contains path_to_paper %}
+        {% assign paper_exists = true %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
 {% assign poster_exists = false %}
 {% capture path_to_poster %}/assets/pdfs/{{ entry.key }}_poster.pdf{% endcapture %}
 {% for static_file in site.static_files %}
@@ -27,6 +36,13 @@
             <i class="fa fa-newspaper"></i>
             <span>paper</span>
         </a>
+    {% endif %}
+
+    {% if paper_exists %}
+    <a class="btn" href="{{ path_to_paper }}">
+        <i class="far fa-file-pdf"></i>
+        <span>pdf</span>
+    </a>
     {% endif %}
 
     {% if entry.arxivid %}
