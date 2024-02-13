@@ -4,5 +4,7 @@ main:
     url: /resume/
   - title: "Publications"
     url: /publications/
+  - title: "Software"
+    url: /software/
   - title: "Teaching"
     url: /teaching/

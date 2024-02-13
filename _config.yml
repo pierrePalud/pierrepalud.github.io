@@ -19,7 +19,7 @@ title: "Pierre Palud"
 title_separator: "-"
 subtitle: "" # site tagline that appears below site title in masthead
 name: "Pierre Palud"
-description: "3rd year PhD student in signal processing and astrophysics"
+description: "PostDoctoral researcher in signal processing and astrophysics"
 github: [metadata]
 url: "https://pierrepalud.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
@@ -99,11 +99,11 @@ analytics:
 author:
   name: "Pierre Palud"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "3rd year PhD student in<br>signal processing<br>and astrophysics<br>"
-  location: "Lille, France"
+  bio: "PostDoctoral researcher<br>in signal processing<br>and astrophysics<br>"
+  location: "Paris, France"
   # email: "pierrepalud@centralelille.fr"
   github: "pierrePalud"
-  gitlab: "pierrePalud"
+  # gitlab: "pierrePalud"
   linkedin: "pierre-palud"
   webpage: "https://pierrepalud.github.io"
   # Academic profiles
@@ -134,8 +134,8 @@ author:
     dryad:
     elsevier:
     figshare:
-    google-scholar:
-    hal:
+    google-scholar: "https://scholar.google.com/citations?hl=fr&user=wXMcfnkAAAAJ"
+    hal: "https://hal.science/search/index/q/*/authIdHal_s/pierre-palud"
     hypothesis:
     ideas-repec:
     ieee:

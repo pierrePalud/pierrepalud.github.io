@@ -33,13 +33,13 @@ toc_sticky: true
 <!-- See also https://github.com/inukshuk/jekyll-scholar to customize your references -->
 
 <!-- Preprints -->
-## Preprints
-
+<!-- ## Preprints -->
+<!--
 {% capture counter_preprints %}{% bibliography_count --query @unpublished %}{% endcapture %}
 {% if counter_preprints != "0" %}
   <!-- <h2>Preprints</h2> -->
-  {% bibliography --query @unpublished %}
-{% endif %}
+  <!-- {% bibliography --query @unpublished %}
+{% endif %} -->
 
 <!-- Book -->
 <!-- {% capture counter_book %}{% bibliography_count --query @book %}{% endcapture %} -->
@@ -48,15 +48,14 @@ toc_sticky: true
   {% bibliography --query @book %}
 {% endif %} -->
 
-<!-- Journal articles
-  ## Journal articles
+<!-- Journal articles -->
+## Journal articles
 
-  {% capture counter_article %}{% bibliography_count --query @article %}{% endcapture %}
-  {% if counter_article != "0" %}
-    <!-- <h2>Journal articles</h2> -->
-    {% bibliography --query @article %}
-  {% endif %}
--->
+{% capture counter_article %}{% bibliography_count --query @article %}{% endcapture %}
+{% if counter_article != "0" %}
+  <!-- <h2>Journal articles</h2> -->
+  {% bibliography --query @article %}
+{% endif %}
 
 <!-- Conference papers -->
 ## International conferences
@@ -85,19 +84,19 @@ toc_sticky: true
   {% bibliography --query @conference[keywords=national] %}
 {% endif %}
 
-<!-- Thesis (commented out)
-  ## Thesis
+<!-- Thesis (commented out) -->
+## Thesis
 
-  {% capture counter_thesis %}{% bibliography_count --query @thesis %}{% endcapture %}
-  {% if counter_thesis != "0" %}
-    <!-- <h2>Thesis</h2> -->
-    {% bibliography --query @thesis %}
-  {% endif %}
--->
+{% capture counter_thesis %}{% bibliography_count --query @thesis %}{% endcapture %}
+{% if counter_thesis != "0" %}
+  <!-- <h2>Thesis</h2> -->
+  {% bibliography --query @thesis %}
+{% endif %}
 
-<!-- Popularization -->
+<!-- Popularization
 {% capture counter_popularization %}{% bibliography_count --query @misc[keywords=popularization] %}{% endcapture %}
 {% if counter_popularization != "0" %}
   <h2>Popularization</h2>
   {% bibliography --query @misc[keywords=popularization] %}
 {% endif %}
+-->
