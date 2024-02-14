@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 
-Welcome to my Professional website !
+Welcome to my professional website !
 
 I am an expert in statistical inference, currently working as a CNRS Postdoctoral researcher in the [AstroParticule et Cosmologie](https://apc.u-paris.fr/APC_CS/) in Paris (France), part of the [Virgo](https://virgo.dur.ac.uk/) consortium.
 My current work focuses on statistical study of Gravitational Wave signals to study black hole mergers or supernovae bursts.
