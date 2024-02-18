@@ -6,3 +6,5 @@ main:
     url: /software/
   - title: "Teaching"
     url: /teaching/
+  - title: "Project Euler"
+    url: /project_euler/
