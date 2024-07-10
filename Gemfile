@@ -25,6 +25,7 @@ gem "minimal-mistakes-jekyll"
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
     gem "jekyll-scholar"
+    gem 'jekyll-seo-tag'
 end
 
 gem "webrick", "~> 1.8"

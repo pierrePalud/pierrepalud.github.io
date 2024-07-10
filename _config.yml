@@ -299,6 +299,7 @@ plugins:
   - jekyll-include-cache
   # Additional plugins
   - jekyll-scholar # see scholar:
+  - jekyll-seo-tag
 
 # https://github.com/inukshuk/jekyll-scholar
 scholar:
