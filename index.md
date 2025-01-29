@@ -7,9 +7,9 @@ classes: wide
 Welcome to my professional website !
 
 I am an expert in statistical inference, currently working as a CNRS Postdoctoral researcher in the [AstroParticule et Cosmologie](https://apc.u-paris.fr/APC_CS/) in Paris (France), part of the [Virgo](https://virgo.dur.ac.uk/) consortium.
-My current work focuses on statistical study of Gravitational Wave signals to study black hole mergers or supernovae bursts.
+My current work focuses on statistical study of Gravitational Wave signals (multivariate time series) to study black hole mergers or supernovae bursts.
 
-Since December 2023, I have a PhD in signal and image processing.
+Since December 2023, I have a PhD in image processing.
 I led this PhD at the interface between two laboratories and one consortium:
 
 * the [SIGMA](https://www.cristal.univ-lille.fr/equipes/sigma/) team (part of [CRIStAL](https://www.cristal.univ-lille.fr/)) for the Signal Processing and Machine Learning part
